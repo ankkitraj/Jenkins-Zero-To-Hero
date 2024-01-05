@@ -37,7 +37,7 @@ pipeline {
     }
     steps {
         script {
-            // Navigate to the Dockerfile location
+            // Use 'dir' to change the working directory
             dir(DOCKERFILE_LOCATION) {
                 // Build the Docker image
                 sh "docker build -t ${DOCKER_IMAGE} ."
