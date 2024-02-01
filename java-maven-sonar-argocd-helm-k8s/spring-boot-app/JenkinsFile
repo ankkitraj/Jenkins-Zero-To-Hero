@@ -68,6 +68,9 @@ pipeline {
                         sh 'git config user.email "ankkitraj4@hotmail.com"'
                         sh 'git config user.name "ankkitraj"'
 
+                        echo 'setting branch explicitly'
+                        sh 'git checkout main'
+
                         echo "Making Changes:"
                         sh "sed -i 's/replaceImageTag/${BUILD_NUMBER}/g' java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml"
                         sh "git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml"
