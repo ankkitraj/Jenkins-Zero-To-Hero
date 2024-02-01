@@ -81,6 +81,3 @@ pipeline {
     }
 }
 
-def error(message) {
-    error(message)
-}
