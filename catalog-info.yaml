@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Jenkins-Zero-To-Hero
+  description: Description of the Jenkins-Zero-To-Hero repository
+  annotations:
+    github.com/project-slug: ankkitraj/Jenkins-Zero-To-Hero
+spec:
+  type: service
+  owner: ankkitraj
+  lifecycle: production
+  system: my-system
+  links:
+    - url: https://github.com/ankkitraj/Jenkins-Zero-To-Hero
+      title: Repository
